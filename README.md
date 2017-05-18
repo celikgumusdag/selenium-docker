@@ -13,26 +13,38 @@ In the directory of project you can run this command :
 ```
 docker-compose up -d
 ```
+![alt text](https://raw.githubusercontent.com/celikgumusdag/selenium-docker/master/img/1.PNG)
+
 You can see the active containers with this command :
 ```
 docker ps
 ```
+![alt text](https://raw.githubusercontent.com/celikgumusdag/selenium-docker/master/img/2.PNG)
+
 Now you can see your active Browsers in this page :
 ```
 http://localhost:4444/grid/console
 ```
+![alt text](https://raw.githubusercontent.com/celikgumusdag/selenium-docker/master/img/3.PNG)
+
 You can scale chromenodes as much as you want with this command :
 ```
 docker-compose scale chromenode=3
 ```
+![alt text](https://raw.githubusercontent.com/celikgumusdag/selenium-docker/master/img/4.PNG)
+![alt text](https://raw.githubusercontent.com/celikgumusdag/selenium-docker/master/img/5.PNG)
+
 End of the project you can kill all active containers with this command :
 ```
 for /F %i in ('docker ps') do docker kill %i
 ```
+![alt text](https://raw.githubusercontent.com/celikgumusdag/selenium-docker/master/img/6.PNG)
+
 End of the project you can remove all passive containers with this command :
 ```
 for /F %i in ('docker ps -qa') do docker rm %i
 ```
+![alt text](https://raw.githubusercontent.com/celikgumusdag/selenium-docker/master/img/7.PNG)
 
 
 About
