@@ -15,4 +15,4 @@ chromenode:
   ports:
     - 5900
   links:
-    - seleniumhub:hubd
+    - seleniumhub:hub
