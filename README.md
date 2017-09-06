@@ -34,13 +34,13 @@ docker-compose scale chromenode=3
 ![alt text](https://raw.githubusercontent.com/celikgumusdag/selenium-docker/master/img/4.PNG)
 ![alt text](https://raw.githubusercontent.com/celikgumusdag/selenium-docker/master/img/5.PNG)
 
-End of the project you can kill all active containers with this command :
+End of the project, you can kill all active containers with this command :
 ```
 for /F %i in ('docker ps') do docker kill %i
 ```
 ![alt text](https://raw.githubusercontent.com/celikgumusdag/selenium-docker/master/img/6.PNG)
 
-End of the project you can remove all passive containers with this command :
+End of the project, you can remove all passive containers with this command :
 ```
 for /F %i in ('docker ps -qa') do docker rm %i
 ```
